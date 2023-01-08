@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'Asap Condensed Medium';
+    src: url("./fonts/AsapCondensed-medium.ttf") format("ttf");
+}
+
+body{
+    font-family: 'Asap Condensed Medium', Arial;
+    background-color: $lightorange;
+}
+
+p{
+    line-height: 1.5em;
+}
+
+.concept{
+    background-color: white;
+    border-radius: 5px 5px 5px 5px;
+    height: 150px;
+    & h2{
+        margin: 0px 0px 5px 5px;
+    }
+    & p{
+        margin: 0px 0px 10px 10px;
+    }
+}
