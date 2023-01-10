@@ -13,9 +13,14 @@ p{
 }
 
 .concept{
+    background-image: url(img/plates.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right;
     background-color: white;
     border-radius: 5px 5px 5px 5px;
-    height: 150px;
+    height: 300px;
+    box-shadow: 10px 10px 10px white inset; /* but: fondre l'image dans le cadre */
     & h2{
         margin: 0px 0px 5px 5px;
     }
