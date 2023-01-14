@@ -8,14 +8,14 @@
 
     <body>
         <header>
-            <h1>VGbox</h1> <!-- Titre affiché en haut à gauche -->
+            <h1><a href="index.html">VGbox</a></h1> <!-- Titre affiché en haut à gauche -->
             <nav> <!-- Menu principal -->
                 <ul class="principal_nav">
-                    <li><a href="#">Recettes</a></li>
-                    <li><a href="#">Nos engagements</a></li>
-                    <li><a href="#">J'offre</a></li>
-                    <li><a href="#" class="btn">Mon compte</a></li><!-- Accès au compte -->
-                    <li><a href="#" class="btn help"><img src="img/icons8-coup-de-main-64.png"></a></li><!-- Accès à l'Aide -->
+                    <li><button class="btn __nav"><a href="recipes.html" target="_blank">Recettes</a></button></li>
+                    <li><button class="btn __nav"><a href="engagements.html" target="_blank">Nos engagements</a></button></li>
+                    <li><button class="btn __nav"><a href="#" target="_blank">J'offre</a></button></li>
+                    <li><button class="btn --green zoom"><a href="#" target="_blank">Mon compte</a></button></li><!-- Accès au compte -->
+                    <li><button class="btn --green zoom"><a href="#" target="_blank"><img src="img/icons8-coup-de-main-64.png"></a></button></li><!-- Accès à l'Aide -->
                 </ul>
             </nav>
         </header>
@@ -23,86 +23,90 @@
         <section class="concept"> <!-- Présentation du concept-->
             <h2>Pourquoi choisir VGbox ?</h2>
             <p>Notre objectif : vous faire aimer la cuisine végétarienne, avec des recettes gourmandes et simples à réaliser.</p>
-            <p>Vous êtes déjà végétarien ? Grâce à notre box, vous recevez des aiments variés et sains chez vous pour cuisiner toujours plus de nouvelles recettes !</p>
-            <p><a href="#" class="btn">Je m'abonne</a></p> <!-- Accès au compte -->
+            <p>Vous êtes déjà végétarien ? </br>
+                Grâce à notre box, vous recevez des aiments variés et sains chez vous,</br> 
+                pour cuisiner toujours plus de nouvelles recettes !</p>
+            <button class="btn --green zoom"><a href="#" target="_blank">Je m'abonne</a></button> <!-- Accès au compte -->
         </section> 
         
-        <section> <!-- section "Comment ça marche ?"-->
-            <h2>Comment ça marche ?</h2>
-            <ol>
-                <li>Je choisis une formule selon le nombre de bouches à nourrir et le nombre de repas souhaités.</li>
-                <li>Je choisis les recettes qui me font envie parmi les +1000 proposées sur le site.</li>
-                <li>Je valide mon panier. VGbox s'occupe de tout !</li>
-                <li>Je reçois mes ingrédients et fiches recettes chez moi, au moment souhaité.</li>
-                <li>Je me régale !</li>
-            </ol>
-            <p><a href="#" class="btn">Je m'abonne</a></p>
-        </section>
+        <div>
+            <section> <!-- section "Comment ça marche ?"-->
+                <h2>Comment ça marche ?</h2>
+                <ol>
+                    <li>Je choisis une formule selon le nombre de bouches à nourrir et le nombre de repas souhaités.</li>
+                    <li>Je choisis les recettes qui me font envie parmi les +1000 proposées sur le site.</li>
+                    <li>Je valide mon panier. VGbox s'occupe de tout !</li>
+                    <li>Je reçois mes ingrédients et fiches recettes chez moi, au moment souhaité.</li>
+                    <li>Je me régale !</li>
+                </ol>
+                <button class="btn --green zoom"><a href="#" target="_blank">Je m'abonne</a></button>
+            </section>
 
-        <section> <!-- section "Combien ça coûte ?"-->
-            <h2>Combien ça coûte ?*</h2>
-            <table>
-                <thead>
-                    <td>Nombre de personnes</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>2 repas</td>
-                        <td>32€</td>
-                        <td>46,2€</td>
-                        <td>59,2€</td>
-                        <td>71€</td>
-                        <td>81,6€</td>
-                    </tr>
-                    <tr>
-                        <td>3 repas</td>
-                        <td>46,2€</td>
-                        <td>65,7€</td>
-                        <td>81,6€</td>
-                        <td>96€</td>
-                        <td>108€</td>
-                    </tr>
-                    <tr>
-                        <td>4 repas</td>
-                        <td>59,2€</td>
-                        <td>81,6€</td>
-                        <td>100,8€</td>
-                        <td>114€</td>
-                        <td>120€</td>
-                    </tr>
-                    <tr>
-                        <td>5 repas</td>
-                        <td>71€</td>
-                        <td>96€</td>
-                        <td>114€</td>
-                        <td>120€</td>
-                        <td>117€</td>
-                    </tr>
-                    <tr>
-                        <td>6 repas</td>
-                        <td>81,6€</td>
-                        <td>108€</td>
-                        <td>120€</td>
-                        <td>117€</td>
-                        <td>104,4€</td>
-                    </tr>
-                    <tr>
-                        <td>7 repas</td>
-                        <td>91€</td>
-                        <td>115,5</td>
-                        <td>117,6</td>
-                        <td>108,5€</td>
-                        <td>84€</td>
-                    </tr>
-                </tbody>
-            </table>
-            <p>* Prix par semaine et hors livraison. Nos tarifs sont dégressifs : plus vous commandez, moins vous payez pour une portion !</p>
-        </section>
+            <section> <!-- section "Combien ça coûte ?"-->
+                <h2>Combien ça coûte ?*</h2>
+                <table>
+                    <thead>
+                        <td>Nombre de personnes</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2 repas</td>
+                            <td>32€</td>
+                            <td>46,2€</td>
+                            <td>59,2€</td>
+                            <td>71€</td>
+                            <td>81,6€</td>
+                        </tr>
+                        <tr>
+                            <td>3 repas</td>
+                            <td>46,2€</td>
+                            <td>65,7€</td>
+                            <td>81,6€</td>
+                            <td>96€</td>
+                            <td>108€</td>
+                        </tr>
+                        <tr>
+                            <td>4 repas</td>
+                            <td>59,2€</td>
+                            <td>81,6€</td>
+                            <td>100,8€</td>
+                            <td>114€</td>
+                            <td>120€</td>
+                        </tr>
+                        <tr>
+                            <td>5 repas</td>
+                            <td>71€</td>
+                            <td>96€</td>
+                            <td>114€</td>
+                            <td>120€</td>
+                            <td>117€</td>
+                        </tr>
+                        <tr>
+                            <td>6 repas</td>
+                            <td>81,6€</td>
+                            <td>108€</td>
+                            <td>120€</td>
+                            <td>117€</td>
+                            <td>104,4€</td>
+                        </tr>
+                        <tr>
+                            <td>7 repas</td>
+                            <td>91€</td>
+                            <td>115,5</td>
+                            <td>117,6</td>
+                            <td>108,5€</td>
+                            <td>84€</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>* Prix par semaine et hors livraison. Nos tarifs sont dégressifs : plus vous commandez, moins vous payez pour une portion !</p>
+            </section>
+        </div>
 
         <footer>
             <nav> <!-- Menu du pied de page -->

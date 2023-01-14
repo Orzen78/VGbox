@@ -2,43 +2,6 @@
   font-family: "Asap Condensed Medium";
   src: url("./fonts/AsapCondensed-medium.ttf") format("ttf");
 }
-body {
-  font-family: "Asap Condensed Medium", Arial;
-  background-color: #F0A700;
-}
-
-p {
-  line-height: 1.5em;
-}
-
-.concept {
-  background-image: url(img/plates.png);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: right;
-  background-color: white;
-  border-radius: 5px 5px 5px 5px;
-  height: 300px;
-  box-shadow: 10px 10px 10px white inset; /* but: fondre l'image dans le cadre */
-}
-.concept h2 {
-  margin: 0px 0px 5px 5px;
-}
-.concept p {
-  margin: 0px 0px 10px 10px;
-}
-
-.btn {
-  background-color: #90DB00;
-  padding: 5px;
-  border-radius: 5px 5px 5px 5px;
-  box-shadow: 5px 5px 5px #90DB00;
-}
-.btn img {
-  max-width: 1.3em;
-  max-height: 1.3em;
-}
-
 header {
   font-family: "Asap Condensed Medium", Arial;
   display: flex;
@@ -59,6 +22,102 @@ header .principal_nav {
 }
 header .principal_nav li {
   padding: 0px 10px 0px 10px;
+  margin: auto;
+}
+
+body {
+  font-family: "Asap Condensed Medium", Arial;
+  background-color: #F0A700;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+section {
+  background-color: white;
+  border-radius: 5px 5px 5px 5px;
+  height: 300px;
+  padding-left: 22px;
+  padding-top: 20px;
+  margin: 10px 5px 10px 5px;
+}
+section h2 {
+  margin: 0px 0px 15px 5px;
+}
+section p {
+  margin: 0px 0px 10px 10px;
+}
+section.concept {
+  background-image: linear-gradient(0.25turn, rgb(255, 255, 255), 75%, rgba(255, 255, 255, 0)), url(img/plates.png);
+  background-repeat: no-repeat;
+  background-attachment: scrolled;
+  background-position: right;
+}
+
+div {
+  display: flex;
+  flex-direction: row;
+}
+
+button.__nav {
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+}
+button img {
+  max-width: 1.3em;
+  max-height: 1.3em;
+}
+button.--green {
+  background-color: #90DB00;
+  padding: 5px;
+  border: none;
+  border-radius: 5px 5px 5px 5px;
+  box-shadow: 5px 5px 5px #90DB00;
+}
+button.--green.zoom {
+  transform: scale(1);
+  transition: transform 400ms;
+}
+button.--green.zoom:hover {
+  transform: scale(1.5);
+}
+button.--green.translate_test {
+  transition: transform 600ms;
+  transform: translateX(0px, 0px);
+}
+button.--green.translate_test:active {
+  transform: translateX(300px);
+}
+button.--green.rotate_test {
+  transition: transform 600ms;
+  transform: rotate(0);
+}
+button.--green.rotate_test:active {
+  transform: rotate(45deg);
+}
+button.--green.translate3D_test {
+  transition: transform 600ms;
+  transform: perspective(500px) translate3d(0px, 0px, 0px);
+}
+button.--green.translate3D_test:active {
+  transform: translate3d(30px, 10px, 500px);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+section.workinprogress {
+  display: flex;
+  flex-direction: column;
+}
+section.workinprogress img {
+  margin: auto;
+  max-width: 600px;
+}
+section.workinprogress p {
   margin: auto;
 }
 

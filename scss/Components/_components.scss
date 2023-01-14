@@ -1,10 +1,49 @@
-.btn{
-    background-color: $green;
-    padding: 5px;
-    border-radius: 5px 5px 5px 5px;
-    box-shadow: 5px 5px 5px $green;
+button{
+    &.__nav{
+    border: none;
+    background-color: rgba(255,255,255,0);
+    }
     & img{
         max-width: 1.3em;
         max-height: 1.3em;
     }
+    &.--green{
+        background-color: $green;
+        padding: 5px;
+        border: none;
+        border-radius: 5px 5px 5px 5px; 
+        box-shadow: 5px 5px 5px $green;
+        &.zoom{
+            transform: scale(1);
+            transition: transform 400ms;
+            &:hover{
+                transform: scale(1.5); 
+            }
+        }
+        &.translate_test{
+            transition: transform 600ms;
+            transform: translateX(0px, 0px);
+            &:active{
+                transform: translateX(300px);
+            }
+        }
+        &.rotate_test{
+            transition: transform 600ms;
+            transform: rotate(0);
+            &:active{
+                transform: rotate(45deg);
+            }
+        }
+        &.translate3D_test{
+            transition: transform 600ms;
+            transform: perspective(500px) translate3d(0px, 0px, 0px);
+            &:active{
+                transform: translate3d(30px, 10px, 500px);
+            }
+        }
+    }
+}
+a{
+    text-decoration: none;
+    color: black;
 }
